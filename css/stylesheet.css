@@ -31,6 +31,13 @@
         color: white;
         font-family: 'Courier New', Courier, monospace;
         font-size: 1.2rem; }
+  .wrapper a {
+    text-decoration: none;
+    color: #fff; }
+  .wrapper:visited {
+    border: none; }
+  .wrapper:focus {
+    border: none; }
 
 @media screen and (max-width: 768px) and (max-width: 480px) {
   .text-style .top-nav div img {

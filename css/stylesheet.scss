@@ -10,8 +10,6 @@ $brkpntTablet: 768px;
 
 //Styles
 .wrapper {
-
-    
     height: 100%;
     width: 100%;
     overflow: fixed;
@@ -50,6 +48,16 @@ $brkpntTablet: 768px;
                 @include textStyles;
             }
         }
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    &:visited {
+        border: none;
+    }
+    &:focus {
+        border: none;
     }
 }
 
