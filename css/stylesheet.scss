@@ -1,0 +1,67 @@
+//variables
+$brkpntMobile: 480px;
+$brkpntTablet: 768px;
+//mixins
+@mixin textStyles {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+//Styles
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: fixed;
+    video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        object-fit: cover;
+    }
+    .text-style {
+        @include textStyles;
+        height: auto;
+        .top-nav {
+            div {
+                img {
+                    padding: 5px;
+                    width: 15%;
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #panel {
+        // padding: 5px;
+        background-color: black;
+        display: none;
+        ul {
+            list-style-type: none;
+            text-align: center;
+            li {
+                display: inline;
+                @include textStyles;
+            }
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width: $brkpntTablet) and (max-width:$brkpntMobile) {
+    .text-style {
+        .top-nav {
+            div {
+                img {
+                    padding: 5px;
+                    width: 100px !important;
+                    height: auto; // text-align: center;
+                }
+            }
+        }
+    }
+}

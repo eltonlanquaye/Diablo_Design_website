@@ -1,3 +1,41 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: fixed; }
+  .wrapper video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover; }
+  .wrapper .text-style {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    height: auto; }
+    .wrapper .text-style .top-nav div img {
+      padding: 5px;
+      width: 15%;
+      height: auto;
+      text-align: center; }
+  .wrapper #panel {
+    background-color: black;
+    display: none; }
+    .wrapper #panel ul {
+      list-style-type: none;
+      text-align: center; }
+      .wrapper #panel ul li {
+        display: inline;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem; }
 
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .text-style .top-nav div img {
+    padding: 5px;
+    width: 100px !important;
+    height: auto; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
