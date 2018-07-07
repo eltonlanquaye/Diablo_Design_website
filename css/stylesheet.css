@@ -26,6 +26,9 @@
 a {
   color: #fff;
   text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #fff; }
 
 .social-media-links {
   position: relative;
@@ -36,7 +39,7 @@ a {
   padding: 0; }
   .social-media-links ul {
     padding-left: 0;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-bottom: 3rem;
     list-style-type: none;
     text-align: center; }

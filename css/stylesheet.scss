@@ -43,6 +43,10 @@ $brkpntTablet: 768px;
 a {
     color: #fff;
     text-decoration: none;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 .social-media-links {
@@ -54,7 +58,7 @@ a {
     padding: 0;
     ul {
         padding-left: 0;
-        padding-top: 3rem;
+        padding-top: 2.5rem;
         padding-bottom: 3rem;
         list-style-type: none;
         text-align: center;
