@@ -10,10 +10,12 @@ $brkpntTablet: 768px;
 
 //Styles
 .wrapper {
-    height: 100%;
+    height: auto;
     width: 100%;
     overflow: fixed;
+    display: block;
     video {
+        display: block;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -36,28 +38,32 @@ $brkpntTablet: 768px;
             }
         }
     }
-    #panel {
-        // padding: 5px;
-        background-color: black;
-        display: none;
-        ul {
-            list-style-type: none;
-            text-align: center;
-            li {
-                display: inline;
-                @include textStyles;
-            }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media-links {
+    position: relative;
+    margin: 0;
+    background-color: grey;
+    display: none;
+    height: 100px;
+    padding: 0;
+    ul {
+        padding-left: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        list-style-type: none;
+        text-align: center;
+        li {
+            display: inline;
+            @include textStyles;
+            padding-right: 10px;
+            padding-left: 10px;
         }
-    }
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-    &:visited {
-        border: none;
-    }
-    &:focus {
-        border: none;
     }
 }
 
@@ -69,7 +75,7 @@ $brkpntTablet: 768px;
                 img {
                     padding: 5px;
                     width: 100px !important;
-                    height: auto; // text-align: center;
+                    height: auto;
                 }
             }
         }
