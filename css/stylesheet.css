@@ -1,10 +1,12 @@
+.content {
+  display: block; }
+
 .wrapper {
   height: auto;
   width: 100%;
   overflow: fixed;
   display: block; }
   .wrapper video {
-    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -22,6 +24,8 @@
       width: 15%;
       height: auto;
       text-align: center; }
+    .wrapper .text-style .bottom-nav .plus {
+      font-size: 0.575rem !important; }
 
 a {
   color: #fff;
@@ -41,7 +45,8 @@ a {
     padding-top: 2.5rem;
     padding-bottom: 3rem;
     list-style-type: none;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     .social-media-links ul li {
       display: inline;
       color: white;

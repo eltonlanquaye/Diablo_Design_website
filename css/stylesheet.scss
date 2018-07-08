@@ -9,13 +9,17 @@ $brkpntTablet: 768px;
 }
 
 //Styles
+.content {
+    display: block;
+}
+
 .wrapper {
     height: auto;
     width: 100%;
     overflow: fixed;
     display: block;
     video {
-        display: block;
+        // display: block;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -35,6 +39,12 @@ $brkpntTablet: 768px;
                     height: auto;
                     text-align: center;
                 }
+            }
+        }
+        .bottom-nav {
+            .plus {
+                font-size: .575rem !important
+                ;
             }
         }
     }
@@ -61,6 +71,7 @@ a {
         padding-bottom: 3rem;
         list-style-type: none;
         text-align: center;
+        overflow: hidden;
         li {
             display: inline;
             @include textStyles;
