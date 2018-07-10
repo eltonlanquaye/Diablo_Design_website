@@ -2,9 +2,9 @@
   display: block; }
 
 .wrapper {
-  height: auto;
+  height: 100vh;
   width: 100%;
-  overflow: fixed;
+  overflow: hidden;
   display: block; }
   .wrapper video {
     height: 100%;
@@ -15,17 +15,20 @@
     z-index: -2;
     object-fit: cover; }
   .wrapper .text-style {
+    display: float;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
-    height: auto; }
+    height: 100% !important; }
     .wrapper .text-style .top-nav div img {
       padding: 5px;
       width: 15%;
       height: auto;
       text-align: center; }
-    .wrapper .text-style .bottom-nav .plus {
-      font-size: 0.575rem !important; }
+    .wrapper .text-style .bottom-nav {
+      align-items: end; }
+      .wrapper .text-style .bottom-nav a .plus .add {
+        font-size: 0.575rem !important; }
 
 a {
   color: #fff;

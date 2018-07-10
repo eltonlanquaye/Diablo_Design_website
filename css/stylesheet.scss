@@ -14,9 +14,9 @@ $brkpntTablet: 768px;
 }
 
 .wrapper {
-    height: auto;
+    height: 100vh;
     width: 100%;
-    overflow: fixed;
+    overflow: hidden;
     display: block;
     video {
         // display: block;
@@ -29,8 +29,9 @@ $brkpntTablet: 768px;
         object-fit: cover;
     }
     .text-style {
+        display: float;
         @include textStyles;
-        height: auto;
+        height: 100% !important;
         .top-nav {
             div {
                 img {
@@ -42,9 +43,13 @@ $brkpntTablet: 768px;
             }
         }
         .bottom-nav {
-            .plus {
-                font-size: .575rem !important
-                ;
+            align-items: end;
+            a {
+                .plus {
+                    .add {
+                        font-size: 0.575rem !important;
+                    }
+                }
             }
         }
     }
