@@ -1,14 +1,24 @@
-//variables
+
+/*.............................   
+        //variables
+..............................*/
 $brkpntMobile: 480px;
+$brkpntMobileMini: 320px;
 $brkpntTablet: 768px;
-//mixins
+
+/*.............................
+            mixins
+..............................*/
+
 @mixin textStyles {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
 }
 
-//Styles
+/*.............................
+            Styles
+..............................*/
 .content {
     display: block;
 }
@@ -66,13 +76,16 @@ a {
 
 .social-media-links {
     margin: 0;
-    background-color: #808080bf;
-    display: none;
+    background-color: #808080;
+    // display: none;
     height: 100px;
     padding: 0;
+    .close {
+        padding: .5rem;
+    }
     ul {
         padding-left: 0;
-        padding-top: 2.5rem;
+        padding-top: 2rem;
         padding-bottom: 3rem;
         list-style-type: none;
         text-align: center;
@@ -86,7 +99,9 @@ a {
     }
 }
 
-// media queries
+/*.....................................
+           media queries
+.......................................*/
 @media screen and (max-width: $brkpntTablet) and (max-width:$brkpntMobile) {
     .text-style {
         .top-nav {
@@ -99,4 +114,27 @@ a {
             }
         }
     }
+}
+
+@media screen and (max-width: $brkpntMobile) {
+
+    .social-media-links {
+        ul {
+            padding-left: 2.5rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: $brkpntMobileMini) {
+
+    .social-media-links {
+        ul {
+            padding-left: 2rem;
+        }
+        i {
+            font-size: 1rem;
+        }
+    }
+
 }
