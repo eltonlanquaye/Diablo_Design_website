@@ -16,103 +16,18 @@ $brkpntTablet: 768px;
     font-size: 1.2rem;
 }
 
-/*.............................
-            Styles
-..............................*/
-.content {
-    display: block;
+//Styles
+img {
+    width: 30%;
 }
-
-.wrapper {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: block;
-    video {
-        // display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-        object-fit: cover;
-    }
-    .text-style {
-        display: float;
-        @include textStyles;
-        height: 100% !important;
-        .top-nav {
-            div {
-                img {
-                    padding: 5px;
-                    width: 15%;
-                    height: auto;
-                    text-align: center;
-                }
-            }
-        }
-        .bottom-nav {
-            align-items: end;
-            a {
-                .plus {
-                    .add {
-                        font-size: 0.575rem !important;
-                    }
-                }
-            }
-        }
-    }
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    &:hover, &:focus {
-        text-decoration: none;
-        color: #fff;
-    }
-}
-
-.social-media-links {
-    margin: 0;
-    background-color: #808080;
-    // display: none;
-    height: 100px;
-    padding: 0;
-    .close {
-        padding: .5rem;
-    }
-    ul {
-        padding-left: 0;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        list-style-type: none;
-        text-align: center;
-        overflow: hidden;
-        li {
-            display: inline;
-            @include textStyles;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-    }
-}
-
-/*.....................................
-           media queries
-.......................................*/
-@media screen and (max-width: $brkpntTablet) and (max-width:$brkpntMobile) {
-    .text-style {
-        .top-nav {
-            div {
-                img {
-                    padding: 5px;
-                    width: 100px !important;
-                    height: auto;
-                }
-            }
-        }
+  
+    
+    // media queries
+  
+@media screen and (max-width: $brkpntMobile) {
+    img {
+        width: 80px;
+        padding-top: .5rem;
     }
 }
 
