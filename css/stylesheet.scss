@@ -10,9 +10,15 @@ $brkpntTablet: 768px;
 
 //Styles
 img {
-    width: 50%;
+    width: 30%;
 }
   
     
     // media queries
   
+@media screen and (max-width: $brkpntMobile) {
+    img {
+        width: 80px;
+        padding-top: .5rem;
+    }
+}
