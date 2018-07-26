@@ -47,7 +47,7 @@
   <a href="#" data-navigo="true" class="js-route N__link N__top_center N__person">
     <img src="media/img.png" alt="Diablo Design">
   </a>
-  <a href="https://shopdiablo.tumblr.com/"  class="js-route N__link N__bottom_left">GALLERY</a>
+  <a href="https://shopdiablo.tumblr.com/" class="js-route N__link N__bottom_left">GALLERY</a>
   <a href="#" class="js-route N__link N__top_left">TEAM</a>
   <a href="http://shopdiablo.bigcartel.com/" class="js-route N__link N__top_right">SHOP</a>
   <a href="https://www.youtube.com/channel/UCv094NlKA_1qJo6l4xXb4dQ?view_as=subscriber" class="js-route N__link N__bottom_right">VIDEO</a>
@@ -57,7 +57,7 @@
 
   <div class="Content">
     <div class="HomeVideo">
-      <video loop autoplay mute preload="auto" playsinline>
+      <video class="js-video" loop autoplay="true" preload="" autostart>
         <source src="media/Diablo Option One.mp4" type="video/mp4">
         <source src="media/Diablo Option One.webm" type="video/webm">
         <source src="media/Diablo-Option-One.ogg" type="video/ogg">
@@ -105,8 +105,63 @@
     </div>
   </div>
 
-<!-- SCRIPTS  -->
+  <!-- SCRIPTS  -->
   <script src="js/app.js"></script>
+  <!-- <div class="Tracking" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+    <script>
+      ! function (t, r, a, v, i, s) {
+        t.GoogleAnalyticsObject = a;
+        t[a] || (t[a] = function () {
+          (t[a].q = t[a].q || []).push(arguments)
+        });
+        t[a].l = +new Date;
+        i = r.createElement(v);
+        s = r.getElementsByTagName(v)[0];
+        i.src = '//www.google-analytics.com/analytics.js';
+        s.parentNode.insertBefore(i, s)
+      }(window, document, 'ga', 'script');
+      ga('create', 'UA-78242385-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '490519084473182');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=490519084473182&ev=PageView&noscript=1">
+    </noscript>
+
+    <script>
+      var e = document.createElement("script");
+      e.async = true;
+      e.src = 'https://ad.atdmt.com/m/a.js;m=11267203331957;cache=' + Math.random();
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(e, s);
+    </script>
+    <noscript>
+      <iframe style="display:none;" src="https://ad.atdmt.com/m/a.html;m=11267203331957;noscript=1"></iframe>
+    </noscript>
+  </div> -->
+
 
 
 </body>

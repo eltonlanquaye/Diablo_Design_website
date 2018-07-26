@@ -31,25 +31,3 @@ img {
     }
 }
 
-@media screen and (max-width: $brkpntMobile) {
-
-    .social-media-links {
-        ul {
-            padding-left: 2.5rem;
-        }
-    }
-
-}
-
-@media screen and (max-width: $brkpntMobileMini) {
-
-    .social-media-links {
-        ul {
-            padding-left: 2rem;
-        }
-        i {
-            font-size: 1rem;
-        }
-    }
-
-}
