@@ -489,7 +489,7 @@ textarea.js-invalid {
 }
 
 .HomeVideo video {
-  object-fit: cover !important;
+  /* object-fit: cover !important; */
   height: 100%;
   width: 100%;
 }
