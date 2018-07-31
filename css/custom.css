@@ -476,7 +476,7 @@ textarea.js-invalid {
 @media only screen and (max-width:768px) {
   .Container {
     max-width: 100% !important;
-    width: 100% !important
+    width: 90% !important
   }
 }
 
@@ -489,9 +489,9 @@ textarea.js-invalid {
 }
 
 .HomeVideo img {
-  /* object-fit: cover !important; */
+  object-fit: contain !important;
   height: 100%;
-  width: 100%;
+  width: 200%;
 }
 
 .Footer {
